@@ -1,1 +1,16 @@
 /* styles go here */
+.div-iline-block {
+  display: inline-block;
+}
+
+.box {
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+}
+
+fieldset:last-child {
+  margin: 0;
+}

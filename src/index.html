@@ -11,7 +11,129 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form>
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <div class="box">
+          <div class="Surname div-iline-block">Surname:</div>
+          <input type="text" name="Surname">
+        </div>
+
+        <div class="box">
+          <div class="Name div-iline-block">Name:</div>
+          <input type="text" name="Name">
+        </div>
+
+        <div class="box">
+          <div class="old div-iline-block">How old are You?</div>
+          <input 
+            type="number" 
+            name="old" 
+            min="1" 
+            max="100" 
+            value="12"
+          >
+        </div>
+
+        <div class="box">
+          <div class="date div-iline-block">Full date of birth:</div>
+          <input type="date" name="date">
+        </div>
+
+        <div>
+          <label>
+            I accept the term of the agreement 
+            <input 
+              type="checkbox" 
+              name="accept"
+            >
+          </label>
+          
+        </div>
+      
+      
+      </fieldset>
+
+      <fieldset>
+        <legend>Registration</legend>
+
+        <div class="box">
+          <div class="email div-iline-block">E-mail:</div>
+          <input type="email" placeholder="email@example.com">
+        </div>
+
+        <div>
+          <div class="password div-iline-block">Password:</div>
+          <input type="password" name="password">
+        </div>
+
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+
+        <div class="box">
+          <div class="love_cats div-iline-block">Do you love cats?</div>
+          <input type="radio" name="love_cats">
+          <label for="love_cats">Yes</label>
+          <input type="radio" name="love_cats">
+          <label for="love_cats">No</label>
+        
+        </div>
+
+        <div class="box">
+          <div class="color div-iline-block">What is your favorit color?</div>
+          <input type="color" name="color">
+        </div>
+
+        <div class="box">
+          <div class="time div-iline-block">What time do you go to bed?</div>
+          <input type="time" name="time">
+        </div>
+
+        <div class="box">
+          <div class="time div-iline-block">What are your favorite brand of cars?</div>
+          <select 
+            name="brand_of_cars" 
+            id="brand_of_cars" 
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="range div-iline-block">How do you rate our work?</div>
+          <input type="range" name="range">
+        </div>
+
+        
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional info:</legend>
+
+        <div class="box">
+          <div class="Comments div-iline-block">Comments:</div>
+          <textarea name="Comments" autocomplete="off"></textarea>
+        </div>
+
+        <div>
+          <div class="recommend div-iline-block">Would you recommend us?</div>
+          <select name="recommend" id="recommend">
+            <option value="yes">yes</option>
+            <option value="No">No</option>
+            
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
